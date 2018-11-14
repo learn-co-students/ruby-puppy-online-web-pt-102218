@@ -1,3 +1,4 @@
+
 class Dog
   @@all = []
 
@@ -8,11 +9,8 @@ class Dog
     @@all << self
   end
 
-
 def self.all
-  @@all.each do |dog|
-    puts "#{dog}"
-  end
+  Dog.all
 end
 
 def self.clear_all
